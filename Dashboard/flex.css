@@ -1,0 +1,58 @@
+
+ .right-start{
+    display: flex;
+    justify-content: space-between;
+    margin-top:48px;
+    margin-bottom:17px;
+    
+} 
+ .card-body-box-content {
+     display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    background: #f0f3f8;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px;
+
+}   
+.user-log{
+     display: flex; 
+     /* flex-flow: wrap-reverse;  */
+    
+}
+.user-log-dtls{
+    place-self: flex-end;
+   margin-left: 8px; 
+} 
+.middle-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weeklyinsights{
+    display: flex;
+    justify-content: space-between;
+}
+.middle-sub3 {
+    display: flex;
+    margin-top:30px;
+}
+.newleads {
+     flex:10; 
+}
+.campaign {
+    flex:3;
+    /* display: flex!important; */
+   
+}
+.campaign button {
+    font-size: x-small;
+}
+.view {
+    font-size: x-small;
+}
+.progress-circular {
+    display: flex;
+    align-items: flex-end;
+}

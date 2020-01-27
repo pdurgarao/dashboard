@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="dashboardmedia.css" rel="stylesheet">
+    <link href="flex.css" rel="stylesheet">
+    <link href="right.css" rel="stylesheet">
+    <link href="progress.css" rel="stylesheet">
+    <script src="dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/f5184d7000.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script>
+        document.getElementById("body-trick").addEventListener('click',closeSide1);
+        function openSlide() {
+            document.getElementById('sidebar-list-menu').style.width = "280px";
+            document.getElementById('wrapper-mobile').style.marginLeft = "0px";
+            document.body.style.backgroundColor = "#80808042";
+        }
+
+        function closeSide() {
+            document.getElementById('sidebar-list-menu').style.width = "0px";
+            document.getElementById('wrapper-mobile').style.marginLeft = "0px";
+            document.body.style.backgroundColor = "initial";
+        }
+
+    </script> -->
+</head>
+
+<body id="body-trick">
+    <!-- leftside-nav -->
+    <div class="container-fluid parent row">
+        <div class="container d-block d-lg-none">
+            <div id="wrapper-mobile">
+                <div class="nav-header">
+                    <div class="logo">
+                        <img src="../Log&images/Builder Manager.jpg" alt="logo" class="img-fluid header-img">
+                        <!-- <h5 class="texth5">BUILDERSLEAD</h5> -->
+                    </div>
+                    <span class="menu-buttton">
+                        <a href="#" onclick="openSlide()"><i class="fas fa-bars open-icon" aria-hidden="true"></i></a>
+                    </span>
+                </div>
+                <div class="sidebar" id="sidebar-list-menu">
+                    <div class="list">
+                        <div class="logo1">
+                            <img src="../Log&images/Builder Manager.jpg" alt="logo" class="img-fluid header-img">
+                            <h5 class="texth5">BUILDERSLEAD</h5>
+                        </div>
+                        <a href="#" onclick="closeSide()"><i class="fas fa-times close-icon"></i></a>
+                        <ul class="sidebar-list-child1">
+                            <li class="sidebar-list-item-child1">
+                                <a href="#" class="single-board"><i
+                                        class="fas fa-tachometer-alt font-icon"></i>Dashboard</a>
+                            </li>
+                        </ul>
+                        <h6 class="side-nav-sub">Dashboard</h6>
+                        <ul class="sidebar-list-child2">
+                            <li class="sidebar-list-item-child2">
+                                <a href="test-click" class="linktags"><i
+                                        class="fas fa-campground font-icon"></i>Campaigns</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-filter font-icon"></i>Leads</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-check-square font-icon"></i>Contacted</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-comments font-icon"></i>Follow up</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-history font-icon"></i>Pending</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-check-circle font-icon"></i>Closed</a>
+                            </li>
+                        </ul>
+                        <h6 class="side-nav-sub">Others</h6>
+                        <ul class="sidebar-list-child2">
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-calendar font-icon"></i>Calender</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-user font-icon"></i>Users</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="fas fa-user-circle font-icon"></i>Profile</a>
+                            </li>
+                            <li class="sidebar-list-item-child2">
+                                <a href="#" class="linktags"><i class="far fa-question-circle font-icon"></i>Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-footer-content">
+                        <div class="user-logout">
+                            <img src="../Log&images/Builder Manager2.jpg" alt="user-profile" class="d-block w-25 h-25 ">
+                            <div class="user-logout-dtls">
+                                <h6 class="userout-name">The Grand By Hyatt</h6>
+                                <p class="textp">MANAGER</p>
+                            </div>
+                        </div>
+
+                        <div class="button-logout">
+                            <a type="button" class="logoutup" style="color:white">SIGNOUT</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Desktop -->
+        <div class="col-lg-2 content-left d-none d-lg-block">
+            <div class="heading-log">
+                <img src="../Log&images/Builder Manager.jpg" class="img-fluid d-block">
+                <h4 class="texth4">BUILDERSLEAD</h4>
+            </div>
+
+            <aside class="aside-list" id="sidenav">
+                <div class="sidenav-list1">
+                    <ul class="nav-list">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link active-class"><i class="fas fa-tachometer-alt"></i>
+                                Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h6 class="text-sub">Dashboard</h6>
+                <div class="sidenav-list">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-campground"></i>Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-filter"></i>Leads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-check-square"></i>Contacted</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-comments"></i>Follow up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-history"></i>Pending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-check-circle"></i>Closed</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h6 class="text-sub">Others</h6>
+                <div class="sidenav-list">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-calendar"></i>Calender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user"></i>Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="fas fa-user-circle"></i>Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="far fa-question-circle"></i>Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="footer-content">
+                <div class="user-log">
+                    <img src="../Log&images/Builder Manager2.jpg" alt="user-profile" class="d-block w-25 h-25 ">
+                    <div class="user-log-dtls">
+                        <h6 class="user-name">The Grand By Hyatt</h6>
+                        <p>MANAGER</p>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a type="button" class="up" style="color:white">SIGNOUT</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- middle content -->
+        <div class=" col-lg-7 middle-cont" onclick="closeSide()">
+            <div class="middle-start">
+                <button class="btn middle-start-child1 childhover"><i
+                        class="far fa-calendar-alt  icon-calender"></i></button>
+                <button class="btn middle-start-child2 childhover"><i class="fas fa-plus-circle icon-add"></i><span
+                        style="font-size:11px;vertical-align: text-bottom;">CREATE CAMPAIGN</span></button>
+
+            </div>
+
+            <div class="activecampaign">
+                <h6 class="text-middle">Active Campaign's</h6>
+            </div>
+            <div class="card-deck d-block">
+                <div class="card-container">
+                    <div class="row cardrow">
+
+                        <div class="card col-lg-4 card-middle1">
+                            <div class="card-content-middle">
+                                <p class="card-text" style="position: absolute;top: -18px;right: 0;"><i
+                                        class="fas fa-history"></i>30th Aug</p>
+                            </div>
+                            <div class="card-body card-bodycontent">
+                                <div class="card-content-middle1">
+                                    <p class="card-text">Total Leads Received</p>
+                                    <span style="color:white"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                                <h2 class="card-text">654</h2>
+                                <div class="card-content-middle2">
+                                    <p class="card-text">Campaign Name</p>
+                                    <h6>The Grand By Hyatt Campaign</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4 card-middle-right">
+                            <div class="card-content-middle-card">
+                                <p class="card-text" style="position:absolute;top:-18px;right: 0;"><i
+                                        class="fas fa-history"></i>20th Sep</p>
+                            </div>
+                            <div class="card-body card-bodycontent2">
+                                <div class="card-content-middle-card1">
+                                    <p class="card-text">Total Leads Received</p>
+                                    <span><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                                <h2 class="card-text">247</h2>
+                                <div class="card-content-middle-card2">
+                                    <p class="card-text">Campaign Name</p>
+                                    <h6>The Grand By Hyatt Campaign</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-lg-4 card-middle-right">
+                            <div class="card-content-middle-card">
+                                <p class="card-text" style="position:absolute;top:-18px;right: 0;"><i
+                                        class="fas fa-history"></i>19th Aug</p>
+                            </div>
+                            <div class="card-body card-bodycontent2">
+                                <div class="card-content-middle-card1">
+                                    <p class="card-text">Total Leads Received</p>
+                                    <span><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                                <h2 class="card-text">182</h2>
+                                <div class="card-content-middle-card2">
+                                    <p class="card-text">Campaign Name</p>
+                                    <h6>The Grand By Hyatt Campaign</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="weeklyinsights">
+                <h6 class="text-middle">Weekly Insights</h6>
+                <p>tap for details</p>
+            </div>
+            <div class="container graph-center">
+                <div class="row">
+                    <div class="col-lg-9 graph-center-start">
+                        <img src="../Log&images/graph2.jpg" class="img-fluid d-block w-100 h-100">
+                    </div>
+                    <div class="col-lg-3 middle-rightside">
+                        <div class="middle-right1">
+                            <div class="line-text">
+                                <div class="line"></div><span class="line-campaign">Campaign Name</span>
+                            </div>
+                            <h6><small>The Grand By Hyatt Campaign</small></h6>
+                        </div>
+                        <div class="middle-right1">
+                            <div class="line-text">
+                                <div class="line1"></div><span class="line-campaign">Campaign Name</span>
+                            </div>
+                            <h6><small>The Grand By Hyatt Campaign</small></h6>
+                        </div>
+                        <div class="middle-right1">
+                            <div class="line-text">
+                                <div class="line2"></div><span class="line-campaign">Campaign Name</span>
+                            </div>
+                            <h6><small>The Grand By Hyatt Campaign</small></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="middle-graph-image d-block">
+                <img class="img-fluid d-block w-100" src="../graph.jpg" alt="graph">
+            </div> -->
+            <div class=" container middle-sub3">
+                <div class="newleads">
+                    <h6>New Leads</h6>
+                </div>
+                <!-- <div class="campaign-veiw"> -->
+                <div class="campaign">
+                    <button class="btn dropdown-toggle toggle-button-right" data-target="listdrop" type="button"
+                        data-toggle="dropdown" style="color:#405b7b">CAMPAIGN NAME
+                        <span class="caret-icon"></span></button>
+                </div>
+                <div class="view">
+                    <p>View All..</p>
+                </div>
+                <!-- </div> -->
+            </div>
+            <!-- Desktop view -->
+            <div class="tableList d-none d-md-block">
+                <table class="table table-borderless tableListMain">
+                    <tbody class="table-body-content">
+
+                        <tr class="table-row-content">
+                            <th scope="row" class="tableimage"><img src="../Log&images/mario.jpg" alt="profile pic"
+                                    class="img-fluid d-block"></th>
+                            <td class="emly-details">Mario Speedwagon</td>
+                            <td class="emly-details">1234567890</td>
+                            <td class="emly-details">mario@gmail.com</td>
+                            <td class="emly-details">19.09.2019</td>
+                            <td class="emly-details"><i class="far fa-check-circle"></i></td>
+                            <td class="emly-details"><i class="fas fa-history"></i></td>
+                            <td class="emly-details"><i class="fas fa-trash-alt"></i></td>
+                            <td class="emly-details emly-details1"><i class="fas fa-ellipsis-h"></i></td>
+
+                        </tr>
+
+                        <tr class="table-row-content">
+                            <th scope="row" class="tableimage"><img src="../Log&images/anna.jpg" alt="profile pic"
+                                    class="img-fluid d-block"></th>
+                            <td class="emly-details">Anna Sthesia</td>
+                            <td class="emly-details">1234567890</td>
+                            <td class="emly-details">annasthesia@gmail.com</td>
+                            <td class="emly-details">19.09.2019</td>
+                            <td class="emly-details"><i class="far fa-check-circle"></i></td>
+                            <td class="emly-details"><i class="fas fa-history"></i></td>
+                            <td class="emly-details"><i class="fas fa-trash-alt"></i></td>
+                            <td class="emly-details emly-details1"><i class="fas fa-ellipsis-h"></i></td>
+                        </tr>
+
+
+                        <tr class="table-row-content">
+                            <th scope="row" class="tableimage"><img src="../Log&images/petey.jpg" alt="profile pic"
+                                    class="img-fluid d-block"></th>
+                            <td class="emly-details">Petey Cruiser</td>
+                            <td class="emly-details">1234567890</td>
+                            <td class="emly-details">cruiser@gmail.com</td>
+                            <td class="emly-details">19.09.2019</td>
+                            <td class="emly-details"><i class="far fa-check-circle"></i></td>
+                            <td class="emly-details"><i class="fas fa-history"></i></td>
+                            <td class="emly-details"><i class="fas fa-trash-alt"></i></td>
+                            <td class="emly-details emly-details1"><i class="fas fa-ellipsis-h"></i></td>
+                        </tr>
+
+
+                        <tr class="table-row-content">
+                            <th scope="row" class="tableimage"><img src="../Log&images/gail.jpg" alt="profile pic"
+                                    class="img-fluid d-block"></th>
+                            <td class="emly-details">Gail Forcewind</td>
+                            <td class="emly-details">1234567890</td>
+                            <td class="emly-details">forcewind@gmail.com</td>
+                            <td class="emly-details">19.09.2019</td>
+                            <td class="emly-details"><i class="far fa-check-circle"></i></td>
+                            <td class="emly-details"><i class="fas fa-history"></i></td>
+                            <td class="emly-details"><i class="fas fa-trash-alt"></i></td>
+                            <td class="emly-details emly-details1"><i class="fas fa-ellipsis-h"></i></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- Desktop View -->
+
+
+            <!-- mobile-view -->
+            <div class="container table-child" onclick="closeSide()">
+            <div class="parentemply d-block d-sm-none">
+                <div class="emply-child1">
+                    <div class="emly-child1-img">
+                        <img src="../Log&amp;images/mario.jpg" class="img-fluid child1-img">
+                    </div>
+                    <div class="emly-child1-text">
+                        <h6 class="child-name">Mario Speedwagon</h6>
+                        <p class="child-email">mario@gmail.com</p>
+                    </div>
+                    <div class=" dropdown child-icon">
+                        <span class="dropdown-toogle" data-toggle="dropdown" id="dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"  aria-hidden="true"></i></span>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <span class="dropdown-item"><i class="fas fa-check-circle child-icon-icon"></i> Status</span>
+                            <span class="dropdown-item"><i class="fas fa-history child-icon-icon"></i> Progress</span>
+                            <span class="dropdown-item"><i class="fas fa-trash child-icon-icon1"></i>Delete</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="parentemply d-block d-sm-none">
+                <div class="emply-child1">
+                    <div class="emly-child1-img" style="width: 21%;">
+                        <img src="../Log&amp;images/anna.jpg" class="img-fluid child1-img">
+                    </div>
+                    <div class="emly-child1-text">
+                        <h6 class="child-name">Anna Sthesia</h6>
+                        <p class="child-email">annasthesia@gmail.com</p>
+                    </div>
+                    <div class=" dropdown child-icon">
+                        <span class="dropdown-toogle"data-toggle="dropdown" id="dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"  aria-hidden="true"></i></span>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <span class="dropdown-item"><i class="fas fa-check-circle child-icon-icon"></i> Status</span>
+                            <span class="dropdown-item"><i class="fas fa-history child-icon-icon"></i> Progress</span>
+                            <span class="dropdown-item"><i class="fas fa-trash child-icon-icon1"></i>Delete</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="parentemply d-block d-sm-none">
+                <div class="emply-child1">
+                    <div class="emly-child1-img">
+                        <img src="../Log&amp;images/petey.jpg" class="img-fluid child1-img">
+                    </div>
+                    <div class="emly-child1-text">
+                        <h6 class="child-name">Petey Cruiser</h6>
+                        <p class="child-email">cruiser@gmail.com</p>
+                    </div>
+                    <div class=" dropdown child-icon">
+                        <span class="dropdown-toogle" style="margin: 0px 3px;"data-toggle="dropdown" id="dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"  aria-hidden="true"></i></span>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <span class="dropdown-item"><i class="fas fa-check-circle child-icon-icon"></i> Status</span>
+                            <span class="dropdown-item"><i class="fas fa-history child-icon-icon"></i> Progress</span>
+                            <span class="dropdown-item"><i class="fas fa-trash child-icon-icon1"></i>Delete</span>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parentemply d-block d-sm-none">
+                <div class="emply-child1">
+                    <div class="emly-child1-img">
+                        <img src="../Log&amp;images/gail.jpg" class="img-fluid child1-img">
+                    </div>
+                    <div class="emly-child1-text">
+                        <h6 class="child-name">Gail Forcewind</h6>
+                        <p class="child-email">forcewind@gmail.com</p>
+                    </div>
+                    <div class=" dropdown child-icon ">
+                        <span class="dropdown-toogle" data-toggle="dropdown" id="dropdown-menu" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"  aria-hidden="true"></i></span>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <span class="dropdown-item"><i class="fas fa-check-circle child-icon-icon"></i> Status</span>
+                            <span class="dropdown-item"><i class="fas fa-history child-icon-icon"></i> Progress</span>
+                            <span class="dropdown-item"><i class="fas fa-trash child-icon-icon1"></i>Delete</span>
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- mobile-view-Ending  -->
+        </div>
+
+
+
+
+        <!-- right content -->
+        <div class="col-lg-3 right-content" onclick="closeSide()">
+            <div class="search-button">
+                <form class="example">
+                    <input class="form-control example-input" type="text" placeholder="Search">
+                    <button type="button" class="btn example-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="col-lg-12 right-content-child">
+                <div class="right-start">
+                    <h6 class="my-auto">Statistic</h6>
+                    <button class="btn dropdown-toggle toggle-button-right" type="button"
+                        data-toggle="dropdown">CAMPAIGN NAME
+                        <span class="caret"></span></button>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="right-box">
+                    <div class="card-content">
+                        <div class="card-body-box-content">
+                            <div class="box-inner-left">
+                                <h6 class="totallead">Total Leads</h6>
+                                <h4>Contacted</h4>
+                            </div>
+                            <div class="progress-circular">
+                                <!-- <div class="circle">
+                                    <h4 class="circle-content">156</h4>
+                                </div> -->
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-30">
+                                        <span class="label">156</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="yest">Yesterday</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-box">
+                    <div class="card-content">
+                        <div class="card-body-box-content">
+                            <div class="box-inner-left">
+                                <h6 class="totallead">Total Leads</h6>
+                                <h4>Follow Up</h4>
+                            </div>
+                            <div class="progress-circular">
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-92">
+                                        <span class="label" style="color:#001f49">92</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="yest">Yesterday</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="right-box">
+                    <div class="card-content">
+                        <div class="card-body-box-content">
+                            <div class="box-inner-left">
+                                <h6 class="totallead">Total Leads</h6>
+                                <h4>Pending</h4>
+                            </div>
+                            <div class="progress-circular">
+                                <!-- <div class="circle">
+                                    <h4 class="circle-content">156</h4>
+                                </div> -->
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-12">
+                                        <span class="label" style="color:#1a3458">12</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="yest">Yesterday</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-box">
+                    <div class="card-content">
+                        <div class="card-body-box-content">
+                            <div class="box-inner-left">
+                                <h6 class="totallead">Total Leads</h6>
+                                <h4>Closed</h4>
+                            </div>
+                            <div class="progress-circular">
+                                <!-- <div class="circle">
+                                    <h4 class="circle-content">156</h4>
+                                </div> -->
+                                <div class="set-size charts-container">
+                                    <div class="pie-wrapper progress-320">
+                                        <span class="label" style="color:#1a3458">320</span>
+                                        <div class="pie">
+                                            <div class="left-side half-circle"></div>
+                                            <div class="right-side half-circle"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="yest">Yesterday</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="right-footer">
+                <div class="img-right">
+                    <img src="../Log&images/Builder Manager 1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="buttons">
+                    <a class="up" role="button" style="color:white"><i class="fas fa-trophy"
+                            style="margin-right:10px"></i><span>UPGRADE PLAN</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
